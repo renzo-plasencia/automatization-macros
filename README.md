@@ -42,18 +42,18 @@ End Sub
 ```vba
 Sub Reporte_cuentas_DPF()
   ''BORRAR HOJAS
-  Application.DisplayAlerts = False
-  Sheets("Todo DPF").Delete
-  Sheets("DPF Juridica - Sin fines").Delete
-  Sheets("DPF Juridica - Con fines").Delete
-  Application.DisplayAlerts = True
-  Sheets("DPF Natural").Select
+    Application.DisplayAlerts = False
+    Sheets("Todo DPF").Delete
+    Sheets("DPF Juridica - Sin fines").Delete
+    Sheets("DPF Juridica - Con fines").Delete
+    Application.DisplayAlerts = True
+    Sheets("DPF Natural").Select
   ''COLUMNAS REALES
-  Columns("A:A").Delete
-  Rows("1:4").Delete
-  Range("B:B,L:L,N:O,Q:Q,S:AB,AD:AD,AG:AH,AJ:AK").Select
-  Selection.Delete Shift:=xlToLeft
-  Range("A1").Select
+    Columns("A:A").Delete
+    Rows("1:4").Delete
+    Range("B:B,L:L,N:O,Q:Q,S:AB,AD:AD,AG:AH,AJ:AK").Select
+    Selection.Delete Shift:=xlToLeft
+    Range("A1").Select
 End Sub
 ```
 
